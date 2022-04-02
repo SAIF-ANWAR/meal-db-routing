@@ -8,7 +8,7 @@ const SearchResult = ({ food }) => {
         navigate(`/food-details/${food.idMeal}`)
     }
     return (
-        <div>
+        <div className='border rounded-lg shadow-lg p-3'>
             <div>
                 <img src={food.strMealThumb} alt="" />
             </div>

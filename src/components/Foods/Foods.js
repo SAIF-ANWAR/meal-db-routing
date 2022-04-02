@@ -9,12 +9,11 @@ const Foods = ({ food }) => {
             .then(res => res.json())
             .then(data => setFoods(data.meals))
     }, [])
-    // console.log(food)
     return (
         <div>
             <div className='grid grid-cols-4 gap-6 justify-center p-10'>
                 {
-                    foods.map(food => <FoodPage food={food} key={food.id}></FoodPage>)
+                    foods.map(food => <FoodPage food={food} key={food.idMeal}></FoodPage>)
                 }
             </div>
         </div>

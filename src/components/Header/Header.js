@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { CustomLink } from '../Custom-Link/CustomLink';
 
 const Header = () => {
     return (
@@ -8,10 +8,10 @@ const Header = () => {
                 <h1 className='text-orange-700'>Logo</h1>
             </div>
             <nav className='text-white'>
-                <Link className='mx-3' to="/" >Home</Link>
-                <Link className='mx-3' to="/foods" >Foods</Link>
-                <Link className='mx-3' to="/contact" >Contact</Link>
-                <Link className='mx-3' to="/about" >About</Link>
+                <CustomLink className='mx-3' to="/" >Home</CustomLink>
+                <CustomLink className='mx-3' to="/foods" >Foods</CustomLink>
+                <CustomLink className='mx-3' to="/contact" >Contact</CustomLink>
+                <CustomLink className='mx-3' to="/about" >About</CustomLink>
             </nav>
         </div>
     );

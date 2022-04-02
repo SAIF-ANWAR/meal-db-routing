@@ -1,7 +1,7 @@
 import React from 'react';
 
 const FoodPage = ({ food }) => {
-    console.log(food)
+
     return (
         <div className='border  p-1 shadow-lg'>
             <div>

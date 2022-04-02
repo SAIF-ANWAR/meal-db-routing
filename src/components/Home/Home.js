@@ -16,11 +16,11 @@ const Home = () => {
 
     return (
         <div>
-            <h1 className='text-3xl font-medium text-center mt-10'>Search foods here by Name</h1>
+            <h1 className='text-4xl font-medium text-center mt-10'>Search foods here by Name</h1>
             <div className="text-center pt-5">
                 <input onChange={searchFood} className="border border-red-400 text-center rounded-md py-1" type="text" />
             </div>
-            <div className="grid grid-cols-3 gap-6 justify-center p-5">
+            <div className="grid grid-cols-3 gap-8 justify-center px-10 py-5">
                 {
                     foods.map(food => <SearchResult key={food.idMeal} food={food}></SearchResult>)
                 }
